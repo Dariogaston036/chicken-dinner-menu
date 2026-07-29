@@ -1,0 +1,21 @@
+{
+  "name": "Chicken Dinner - Menú",
+  "short_name": "Chicken Dinner",
+  "description": "Pedí tu Chicken Dinner. Envíos a Paso del Rey y Moreno.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0A0A",
+  "theme_color": "#E31E24",
+  "icons": [
+    {
+      "src": "chicken-logo.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "chicken-logo.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}
