@@ -443,7 +443,7 @@ function App() {
     if (!code) return;
     if (code === WELCOME_CODE) {
       setDiscount({ source: "Bienvenida", percent: WELCOME_PERCENT });
-      setPromoMsg({ ok: true, text: `¡Código aplicado! ${WELCOME_PERCENT}% off en tu pedido.` });
+      setPromoMsg({ ok: true, text: "¡Código aplicado! Envío gratis en tu pedido." });
     } else {
       setPromoMsg({ ok: false, text: "Ese código no es válido." });
     }
@@ -570,11 +570,13 @@ function App() {
 
       e("div", { className: "promo-banner", style: { marginBottom: 24 } },
         e("span", { style: { fontSize: 22 } }, "🎁"),
-        e("div", { className: "promo-banner-text" },
-          e("strong", null, "25% OFF en tu primera compra web."), " Usá el código ",
-          e("span", { className: "promo-banner-code" }, WELCOME_CODE), " al pagar."
-        )
-      ),
+       
+          e("div", { className: "promo-banner-text" },
+  e("strong", null, "¡Envío GRATIS en tu compra web! "), " Usá el código ",
+  e("span", { className: "promo-banner-code" }, WELCOME_CODE), " al pagar."
+)
+  ),
+
 
       e("div", { className: "people-calc", style: { marginBottom: 8 } },
         e("p", { className: "people-calc-title mono-font" }, "¿CUÁNTO PEDIR? · SOMOS..."),
