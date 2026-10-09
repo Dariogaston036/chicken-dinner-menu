@@ -113,7 +113,8 @@
   .sauce-note { text-align:center; color:#8a8a8a; font-size:12px; margin:0 0 16px; }
 
   .wheel-fab { position:fixed; bottom:16px; right:16px; z-index:39; width:58px; height:58px; border-radius:50%; background:#FFD400; border:3px solid #0A0A0A; box-shadow:0 4px 16px rgba(0,0,0,0.5); font-size:26px; cursor:pointer; }
-  .wheel-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.75); z-index:60; display:flex; align-items:center; justify-content:center; padding:20px; }
+  .wheel-overlay { display: none !important; position:fixed; inset:0;
+background:rgba(0,0,0,0.75); z-index:60; display:flex; align-items:center; justify-content:center; padding:20px; }
   .wheel-modal { background:#111; border:2px solid #E31E24; border-radius:18px; padding:26px 22px; max-width:340px; width:100%; text-align:center; }
   .wheel-modal h3 { color:#fff; margin:0 0 8px; }
   .wheel-modal p { color:#a8a8a8; font-size:13px; margin:0 0 20px; }
@@ -242,7 +243,8 @@ const e = React.createElement;
 const { useState, useMemo, useEffect } = React;
 
 const WHATSAPP_NUMBER = "5491130370442";
-const WELCOME_CODE = "BIENVENIDO25";
+const WELCOME_CODE = "ENVIO_GRATIS";
+
 const WELCOME_PERCENT = 25;
 
 const POINTS_GOAL = 50000; // ARS para ganar 1 producto gratis
